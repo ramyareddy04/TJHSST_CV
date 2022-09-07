@@ -1,0 +1,16 @@
+- can write points at infinite distance away from the origin in homogeneous coords without using unreal/undefined numbers ([u, v, w] where w = 0)
+- parallel lines meet at the same point at infinity
+- rotation matrices in 3D are pretty intuitive. 3D rotation can be represented using one angle, but in 3D we need three angles as we can rotate about the x,y,z axes
+- rigid body transformation (3 translation + 3D rotation)
+- similarity transformation (rigid body + scale); angle preserving
+- affine transformation (rigid body + 3 scale + 3 sheer); parallel line preserving, but not angle preserving
+- projective transformation (affine + 3 projective)
+- can invert/chain transformations easily bc you can represent all transformations with matrix multiplication
+
+	2D
+- we can confirm if point is on line through dot product (x dot l = 0) in homogeneous coords rep
+- intersection of two lines can be solved using cramer's rule (very nostalgic for math 4 lol) for 2D and cross product for 3D
+- line that goes between two points can be calculated with cramer's rule
+
+	3D
+- we can confirm is point is on plane through scalar produt (A dot x = 0)
